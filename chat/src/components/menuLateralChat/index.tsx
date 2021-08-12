@@ -14,9 +14,9 @@ const MenuLateral = ({user, userSelected}: any) => {
         setInfoUserLogado(resp.data)
     }
 
-    const handleSearchUser = async (search: any | undefined) => {
+    const handleSearchUser = async (s: any) => {
         const resp = await api.get('/user');
-        setSearch(search);
+        setSearch(s);
         setUsers(search ? resp.data.filter((item: any) => item.nome.indexOf(search) !== -1): []);
     }
 
@@ -58,7 +58,8 @@ const MenuLateral = ({user, userSelected}: any) => {
         // Verificar se no usuario LOGADO tem o usuario que vai adcionar se nao tiver salva se tiver passa direto
         const result1 = user1.data.amigos.filter((e: any) => e.nome.indexOf(item.nome) !== -1);
         if(result1.length === 0 && user1.data.nome !== item.nome ) {
-           console.log('esse amigo nao existe pode add', result1) 
+            console.log('esse amigo nao existe pode add', result1) 
+
         }else {
             console.log('nao pode add ', result1) 
         }
