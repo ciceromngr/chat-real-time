@@ -4,7 +4,7 @@
 
 "yarn ou npm i"
 
-## Para comecar INICIAR o JSON-SERVER
+## Para comecar INICIAR o JSON-SERVER que simula uma API
 
 "json-server --watch db.json --port 3001"
 
