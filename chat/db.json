@@ -1,0 +1,86 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "nome": "cicero",
+      "img": "https://picsum.photos/200/300?random=100",
+      "email": "cicero@cicero.com",
+      "senha": "123123",
+      "msg": [
+        {
+          "conversaEntre": [
+            "cicero",
+            "paulo"
+          ],
+          "chat": []
+        }
+      ],
+      "token": "5b1d5485e73569f558527b588b4ffc71cd32e2466f3b571ddfe57bd7b9785f7221452caf155a2bd53ae7ddb885e55bdc1e3328d21c386f1abd9a96cc846ca088333878dbb9da50daca6aaf6471",
+      "amigos": [
+        {
+          "id": 2,
+          "nome": "paulo",
+          "img": "https://picsum.photos/200/300?random=100"
+        }
+      ],
+      "status": [
+        {
+          "amigos": 15,
+          "online": true,
+          "recomendacoes": 0,
+          "pro": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nome": "paulo",
+      "img": "https://picsum.photos/200/300?random=100",
+      "email": "paulo@paulo.com",
+      "senha": "123123",
+      "msg": [
+        {
+          "conversaEntre": [
+            "paulo",
+            "cicero"
+          ],
+          "chat": []
+        }
+      ],
+      "token": "e758463335a9a16818b3dfff9cb8d8e658b9185e5f79436c9c73854bc03bc35a1273882a9050801ede526becb3696c8b1dc86f8b46d4dc5a1e52d3927b7d60cc4024a0e2e046fcb457373e2aa1bd5",
+      "amigos": [
+        {
+          "id": 1,
+          "nome": "cicero",
+          "img": "https://picsum.photos/200/300?random=100"
+        }
+      ],
+      "status": [
+        {
+          "amigos": 0,
+          "online": true,
+          "recomendacoes": 0,
+          "pro": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "nome": "guilherme",
+      "img": "https://picsum.photos/200/300?random=100",
+      "email": "guilherme@guilherme.com",
+      "senha": "123123",
+      "msg": [],
+      "token": "e758463335a9a16818b3dfff9cb8d8e658b9185e5f79436c9c73854bc03bc35a1273882a9050801ede526becb3696c8b1dc86f8b46d4dc5a1e52d3927b7d60cc4024a0e2e046fcb457373e2aa1bd5",
+      "amigos": [],
+      "status": [
+        {
+          "amigos": 0,
+          "online": true,
+          "recomendacoes": 0,
+          "pro": false
+        }
+      ]
+    }
+  ]
+}

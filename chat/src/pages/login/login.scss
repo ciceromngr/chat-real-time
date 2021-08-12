@@ -1,0 +1,125 @@
+.container__login {
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+
+    .login__form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 2rem;
+        border-radius: 2rem;
+        backdrop-filter: blur(1rem);
+        z-index: 2;
+        row-gap: 1.258rem;
+
+        input {
+            background: linear-gradient(
+            to right bottom,
+            rgba(255, 255, 255, 0.7),
+            rgba(255, 255, 255, 0.3)
+            );
+            border: none;
+            width: 100%;
+            padding: 0.5rem;
+            border-radius: 2rem;
+            font-size: 1.2rem;
+            padding: .8rem 2rem;
+            outline: none;
+
+            text-align: center;
+        }
+
+        input[type = "submit"] {
+            cursor: pointer;
+            color: #3fbccf;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        input[type = "submit"]:hover {
+            background: linear-gradient(
+            to right bottom,
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0.5)
+            );
+        }
+    }
+
+    .bola1 , .bola2 {
+        background: linear-gradient(
+            to right bottom,
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0.3)
+        );
+        height: 20rem;
+        width: 20rem;
+        border-radius: 50%;
+    }
+    
+    .bola1 {
+        width: 10rem;
+        height: 10rem;
+        position: absolute;
+        top: 15rem;
+        left: 5rem;
+        animation: bola1 2s infinite alternate-reverse;
+    }
+    
+    @keyframes bola1 {
+        0%, 100% {
+            transform: translateX(1rem);
+        }
+    
+        25% {
+            transform: translateX(20rem);
+        }
+    
+        50% {
+            transform: translateY(20rem);
+        }
+    
+        70% {
+            transform: translateY(11rem);
+            transition-timing-function: 1s linear;
+        }
+    
+    }
+    
+    .bola2 {
+        width: 11rem;
+        height: 10rem;
+        position: absolute;
+        bottom: 15rem;
+        right: 4rem;
+        animation: bola2 2s infinite alternate-reverse;
+    }
+    
+    @keyframes bola2 {
+        0%, 100% {
+            transform: translateX(-1rem);
+        }
+    
+        25% {
+            transform: translateX(-20rem);
+        }
+    
+        50% {
+            transform: translateY(-20rem);
+        }
+    
+        70% {
+            transform: translateY(-11rem);
+            transition-timing-function: 1s linear;
+        }
+    
+    }
+}
+
+
+

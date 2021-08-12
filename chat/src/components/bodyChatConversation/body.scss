@@ -1,0 +1,54 @@
+.container__bodyConversation {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+
+    .bodyConversation__header {
+        display: flex;
+        height: 5.5rem;
+        align-items: center;
+        padding-left: .558rem;
+        column-gap: 1rem;
+        border-bottom: 1px solid black;
+
+        img {
+            width: 4.5rem;
+            height: 4.5rem;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+
+    .bodyConversation__body {
+        flex: 1;
+
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 1rem;
+        overflow-y: auto;
+
+        .user1 {
+            // background: red;
+            display: flex;
+            justify-content: flex-end;
+
+            h1 {
+                max-width: 80%;
+                background: green;
+                text-align: right;
+            }
+
+        }
+
+        .user2 {
+            display: flex;
+            justify-content: flex-start;
+
+            h1 {
+                max-width: 80%;
+                background: green;
+                text-align: left;
+            }
+        }
+    }
+}
