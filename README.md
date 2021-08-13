@@ -1,4 +1,4 @@
-# O projeto ainda nao possui uma API 
+# O projeto ainda nao possui uma API(em producao) 
 
 ## Priemiro dar um Yarn no projeto para baixar o node_modules :)
 
