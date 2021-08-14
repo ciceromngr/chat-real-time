@@ -6,23 +6,9 @@
       "img": "https://picsum.photos/200/300?random=100",
       "email": "cicero@cicero.com",
       "senha": "123123",
-      "msg": [
-        {
-          "conversaEntre": [
-            "cicero",
-            "paulo"
-          ],
-          "chat": []
-        }
-      ],
-      "token": "5b1d5485e73569f558527b588b4ffc71cd32e2466f3b571ddfe57bd7b9785f7221452caf155a2bd53ae7ddb885e55bdc1e3328d21c386f1abd9a96cc846ca088333878dbb9da50daca6aaf6471",
-      "amigos": [
-        {
-          "id": 2,
-          "nome": "paulo",
-          "img": "https://picsum.photos/200/300?random=100"
-        }
-      ],
+      "msg": 1,
+      "token": "7580cb194929d6f16d587ada59447a89fedc260f373cb8b1feeebdadbbbe87797e68f91911dc9885af3854dcbfa1582d880aabbfc7b429fe87e57b9612220a91779f7daedd8aadd42e94d6654e6",
+      "amigos": 1,
       "status": [
         {
           "amigos": 15,
@@ -38,23 +24,9 @@
       "img": "https://picsum.photos/200/300?random=100",
       "email": "paulo@paulo.com",
       "senha": "123123",
-      "msg": [
-        {
-          "conversaEntre": [
-            "paulo",
-            "cicero"
-          ],
-          "chat": []
-        }
-      ],
-      "token": "e758463335a9a16818b3dfff9cb8d8e658b9185e5f79436c9c73854bc03bc35a1273882a9050801ede526becb3696c8b1dc86f8b46d4dc5a1e52d3927b7d60cc4024a0e2e046fcb457373e2aa1bd5",
-      "amigos": [
-        {
-          "id": 1,
-          "nome": "cicero",
-          "img": "https://picsum.photos/200/300?random=100"
-        }
-      ],
+      "msg": 2,
+      "token": "1e844d4285cd1221e5322b2a3690c6d614c3e329659ffcb6e1f3dac616a24b371cf6a5eaf93f6b3112c3721f6df678210d23c1810ff9e406d3a63acdc5b5e8b902d7fc233eb2f16373735bd8",
+      "amigos": 2,
       "status": [
         {
           "amigos": 0,
@@ -63,16 +35,16 @@
           "pro": false
         }
       ]
-    },
+    }, 
     {
       "id": 3,
       "nome": "guilherme",
       "img": "https://picsum.photos/200/300?random=100",
       "email": "guilherme@guilherme.com",
       "senha": "123123",
-      "msg": [],
-      "token": "e758463335a9a16818b3dfff9cb8d8e658b9185e5f79436c9c73854bc03bc35a1273882a9050801ede526becb3696c8b1dc86f8b46d4dc5a1e52d3927b7d60cc4024a0e2e046fcb457373e2aa1bd5",
-      "amigos": [],
+      "msg": 3,
+      "token": "4338bc156b4347a5244572c93729dbea85c95b3855eea34372685b7fe735be76e0b28588439d3c5f6bfa5de88d7e119449193312e43a26eedf35b9505d8a2b4d148c28a72d04d597235e16bdab3b",
+      "amigos": 3,
       "status": [
         {
           "amigos": 0,
@@ -82,5 +54,106 @@
         }
       ]
     }
-  ]
+  ],
+  "amigos": [
+    {
+      "userId": 1,
+      "idAmigo": 3,
+      "nome": "guilherme",
+      "img": "https://picsum.photos/200/300?random=100",
+      "id": 1
+    },
+    {
+      "userId": 3,
+      "idAmigo": 1,
+      "nome": "cicero",
+      "img": "https://picsum.photos/200/300?random=100",
+      "id": 2
+    },
+    {
+      "userId": 1,
+      "idAmigo": 2,
+      "nome": "paulo",
+      "img": "https://picsum.photos/200/300?random=100",
+      "id": 3
+    },
+    {
+      "userId": 2,
+      "idAmigo": 1,
+      "nome": "cicero",
+      "img": "https://picsum.photos/200/300?random=100",
+      "id": 4
+    },
+    {
+      "userId": 2,
+      "idAmigo": 3,
+      "nome": "guilherme",
+      "img": "https://picsum.photos/200/300?random=100",
+      "id": 5
+    },
+    {
+      "userId": 3,
+      "idAmigo": 2,
+      "nome": "paulo",
+      "img": "https://picsum.photos/200/300?random=100",
+      "id": 6
+    }
+  ],
+  "msg": [
+    {
+      "userId": 1,
+      "conversaEntre": [
+        "cicero",
+        "guilherme"
+      ],
+      "chat": [],
+      "id": 1
+    },
+    {
+      "userId": 3,
+      "conversaEntre": [
+        "guilherme",
+        "cicero"
+      ],
+      "chat": [],
+      "id": 2
+    },
+    {
+      "userId": 1,
+      "conversaEntre": [
+        "cicero",
+        "paulo"
+      ],
+      "chat": [],
+      "id": 3
+    },
+    {
+      "userId": 2,
+      "conversaEntre": [
+        "paulo",
+        "cicero"
+      ],
+      "chat": [],
+      "id": 4
+    },
+    {
+      "userId": 2,
+      "conversaEntre": [
+        "paulo",
+        "guilherme"
+      ],
+      "chat": [],
+      "id": 5
+    },
+    {
+      "userId": 3,
+      "conversaEntre": [
+        "guilherme",
+        "paulo"
+      ],
+      "chat": [],
+      "id": 6
+    }
+  ],
+  "chat": []
 }

@@ -10,15 +10,16 @@ const BodyConversation = ({user , userSelected}: any) => {
 
     const handleChat =async () => {
         const resp = await api.get(`/user/${getId()}`)
-        setChat(resp.data.msg);
+
+        const respMsg = await api.get('/msg');
+        setChat(respMsg.data);
     }
 
     const handleEnviarMensagem = async (e: any) => {
         e.preventDefault();
-
             chat.map((item:any) => {
                     const res = item.conversaEntre;
-                    if(res[0] === user?.nome && res[1] === userSelected?.nome ) {
+                    if(res[0] === user?.nome && res[1] === userSelected?.nome ) 
                         console.log("conversa com ", userSelected?.nome);;
                         console.log("Item ", item);
 
@@ -31,12 +32,12 @@ const BodyConversation = ({user , userSelected}: any) => {
                                 }
                               ]
                         } 
-                        // console.log(parms)
+                        console.log(parms)
                         setChatConversation(item.chat);
-                    }
+                    
                 }
             )
-            
+
             // await api.patch(``);
 
         setMsg('');
