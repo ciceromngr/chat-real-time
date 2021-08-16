@@ -26,10 +26,10 @@ const MenuLateral = ({user, userSelected}: any) => {
 
     const handleAdd = async (item: any) => {
         const params1_1 = {
-            "msg": {
+            "chat": {
                 "userId": user?.id,
                 "conversaEntre":[user?.nome, item.nome],
-                "chat": []
+                "msg": []
               },
 
             "amigos": {
@@ -41,10 +41,10 @@ const MenuLateral = ({user, userSelected}: any) => {
         }
 
         const params1_2 = {
-            "msg": {
+            "chat": {
                 "userId": item.id,
                 "conversaEntre":[item.nome,user.nome],
-                "chat": []
+                "msg": []
               },
 
             "amigos": {
@@ -57,8 +57,8 @@ const MenuLateral = ({user, userSelected}: any) => {
 
         await api.post('/amigos',params1_1.amigos)
         await api.post('/amigos',params1_2.amigos)
-        await api.post('/msg',params1_1.msg)
-        await api.post('/msg',params1_2.msg)
+        await api.post('/chat',params1_1.chat)
+        await api.post('/chat',params1_2.chat)
 
         setSearch('')
         handleInfo();

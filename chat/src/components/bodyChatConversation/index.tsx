@@ -12,35 +12,29 @@ const BodyConversation = ({user , userSelected}: any) => {
         const resp = await api.get(`/user/${getId()}`)
 
         const respMsg = await api.get('/msg');
-        setChat(respMsg.data);
+
+        const chatMensage = await api.get('/chat');
+
+        setChat(chatMensage.data);
+
+        console.log(chatMensage.data)
     }
 
     const handleEnviarMensagem = async (e: any) => {
         e.preventDefault();
-            chat.map((item:any) => {
-                    const res = item.conversaEntre;
-                    if(res[0] === user?.nome && res[1] === userSelected?.nome ) 
-                        console.log("conversa com ", userSelected?.nome);;
-                        console.log("Item ", item);
+        chat.map(async (item: any) => {
+            const arrayCE = item.conversaEntre
 
-                        const parms = {
-                            "msg": [
-                                {
-                                  "chat": [
-                                      {"nome":user?.nome, "msg": msg}
-                                    ]
-                                }
-                              ]
-                        } 
-                        console.log(parms)
-                        setChatConversation(item.chat);
-                    
+            if(arrayCE[0] === user?.nome && arrayCE[1] === userSelected?.nome){
+                const params = {
+                    "de":  user?.nome,
+                    "para": userSelected?.nome,
+                    "mensagem": msg
                 }
-            )
-
-            // await api.patch(``);
-
-        setMsg('');
+                console.log(params)
+            }
+        })
+        setMsg('');        
     }
 
     useEffect(() => {

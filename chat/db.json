@@ -7,7 +7,7 @@
       "email": "cicero@cicero.com",
       "senha": "123123",
       "msg": 1,
-      "token": "7580cb194929d6f16d587ada59447a89fedc260f373cb8b1feeebdadbbbe87797e68f91911dc9885af3854dcbfa1582d880aabbfc7b429fe87e57b9612220a91779f7daedd8aadd42e94d6654e6",
+      "token": "78c96cf71cceb84bb2ee77c249259f7e52abdf8e7ba3c32f23d807abdbb7daae94640e24914ba848acd17f35afee69e1c64fa1dcdf3a28ada73bcf749f54855612c8b1db59f87c3899adc8a814",
       "amigos": 1,
       "status": [
         {
@@ -25,7 +25,7 @@
       "email": "paulo@paulo.com",
       "senha": "123123",
       "msg": 2,
-      "token": "1e844d4285cd1221e5322b2a3690c6d614c3e329659ffcb6e1f3dac616a24b371cf6a5eaf93f6b3112c3721f6df678210d23c1810ff9e406d3a63acdc5b5e8b902d7fc233eb2f16373735bd8",
+      "token": "be7324ff53b43a9a7c9af4f4d481d15c19b7bbd1fcc2d3258724694b314967e2cbfd45eca217e9569426eb678088b9b1aeffe89b7b8bdb1991eb516342090a2a9a1f677e526c5a418671dcc7a596",
       "amigos": 2,
       "status": [
         {
@@ -35,7 +35,7 @@
           "pro": false
         }
       ]
-    }, 
+    },
     {
       "id": 3,
       "nome": "guilherme",
@@ -69,44 +69,25 @@
       "nome": "cicero",
       "img": "https://picsum.photos/200/300?random=100",
       "id": 2
-    },
-    {
-      "userId": 1,
-      "idAmigo": 2,
-      "nome": "paulo",
-      "img": "https://picsum.photos/200/300?random=100",
-      "id": 3
-    },
-    {
-      "userId": 2,
-      "idAmigo": 1,
-      "nome": "cicero",
-      "img": "https://picsum.photos/200/300?random=100",
-      "id": 4
-    },
-    {
-      "userId": 2,
-      "idAmigo": 3,
-      "nome": "guilherme",
-      "img": "https://picsum.photos/200/300?random=100",
-      "id": 5
-    },
-    {
-      "userId": 3,
-      "idAmigo": 2,
-      "nome": "paulo",
-      "img": "https://picsum.photos/200/300?random=100",
-      "id": 6
     }
   ],
   "msg": [
+    {
+      "id": 1
+    }
+  ],
+  "chat": [
     {
       "userId": 1,
       "conversaEntre": [
         "cicero",
         "guilherme"
       ],
-      "chat": [],
+      "msg": [
+        {
+          "id": 1
+        }
+      ],
       "id": 1
     },
     {
@@ -115,45 +96,12 @@
         "guilherme",
         "cicero"
       ],
-      "chat": [],
+      "msg": [
+        {
+          "id": 1
+        }
+      ],
       "id": 2
-    },
-    {
-      "userId": 1,
-      "conversaEntre": [
-        "cicero",
-        "paulo"
-      ],
-      "chat": [],
-      "id": 3
-    },
-    {
-      "userId": 2,
-      "conversaEntre": [
-        "paulo",
-        "cicero"
-      ],
-      "chat": [],
-      "id": 4
-    },
-    {
-      "userId": 2,
-      "conversaEntre": [
-        "paulo",
-        "guilherme"
-      ],
-      "chat": [],
-      "id": 5
-    },
-    {
-      "userId": 3,
-      "conversaEntre": [
-        "guilherme",
-        "paulo"
-      ],
-      "chat": [],
-      "id": 6
     }
-  ],
-  "chat": []
+  ]
 }
