@@ -7,33 +7,35 @@ const BodyConversation = ({user , userSelected}: any) => {
     const [msg, setMsg] = useState('');
     const [chat, setChat] = useState([]);
     const [chatConversation, setChatConversation] = useState([])
-
+    // setTimeout(() => {
+    //     handleChat()
+    // },10000)
     const handleChat =async () => {
-        const resp = await api.get(`/user/${getId()}`)
-
-        const respMsg = await api.get('/msg');
-
         const chatMensage = await api.get('/chat');
 
-        setChat(chatMensage.data);
-
-        console.log(chatMensage.data)
+        chatMensage.data.map(async (item: any) => {
+            const arrayCE = item.conversaEntre
+            console.log(item)
+            
+            if(arrayCE[0] === user?.nome && arrayCE[1] === userSelected?.nome){
+                setChat(item.msg);
+            }
+        })
     }
 
     const handleEnviarMensagem = async (e: any) => {
         e.preventDefault();
-        chat.map(async (item: any) => {
-            const arrayCE = item.conversaEntre
 
-            if(arrayCE[0] === user?.nome && arrayCE[1] === userSelected?.nome){
-                const params = {
-                    "de":  user?.nome,
-                    "para": userSelected?.nome,
-                    "mensagem": msg
-                }
-                console.log(params)
-            }
-        })
+        const params = {
+            "nome": user.nome,
+            "cv": msg
+        }
+
+        await api.patch('/chat/1', {
+            "msg": [...chat, params]
+        });
+
+        
         setMsg('');        
     }
 
@@ -52,12 +54,11 @@ const BodyConversation = ({user , userSelected}: any) => {
                     </div>
 
                     <div className="bodyConversation__body">
-                        {/* {chat.map((item:any, key: any) => (
+                        {chat.map((item:any, key: any) => (
                             <div key={key}>
-                                <div className="user1"><h1>Ola user 1</h1></div>
-                                <div className="user2"><h1>Ola user 2</h1></div>
+                                <div className={item.nome === user?.nome?'user1': 'user2'}><h1>{item.cv}</h1></div>
                             </div>
-                        ))} */}
+                        ))}
                     </div>
 
                     <div className="bodyConversation__input">

@@ -6,8 +6,7 @@
       "img": "https://picsum.photos/200/300?random=100",
       "email": "cicero@cicero.com",
       "senha": "123123",
-      "msg": 1,
-      "token": "78c96cf71cceb84bb2ee77c249259f7e52abdf8e7ba3c32f23d807abdbb7daae94640e24914ba848acd17f35afee69e1c64fa1dcdf3a28ada73bcf749f54855612c8b1db59f87c3899adc8a814",
+      "token": "94548f6f94c66f76ec343eb1a0ff95d8132511f813c6d98a8c19b2b7ef5c4eb4a18bd536d9c0d17b6d55474116fe8b0e47ad5169595945955a231ece758d95fe05995850bbc5c5911e2c685362bcd",
       "amigos": 1,
       "status": [
         {
@@ -24,7 +23,6 @@
       "img": "https://picsum.photos/200/300?random=100",
       "email": "paulo@paulo.com",
       "senha": "123123",
-      "msg": 2,
       "token": "be7324ff53b43a9a7c9af4f4d481d15c19b7bbd1fcc2d3258724694b314967e2cbfd45eca217e9569426eb678088b9b1aeffe89b7b8bdb1991eb516342090a2a9a1f677e526c5a418671dcc7a596",
       "amigos": 2,
       "status": [
@@ -42,7 +40,6 @@
       "img": "https://picsum.photos/200/300?random=100",
       "email": "guilherme@guilherme.com",
       "senha": "123123",
-      "msg": 3,
       "token": "4338bc156b4347a5244572c93729dbea85c95b3855eea34372685b7fe735be76e0b28588439d3c5f6bfa5de88d7e119449193312e43a26eedf35b9505d8a2b4d148c28a72d04d597235e16bdab3b",
       "amigos": 3,
       "status": [
@@ -69,39 +66,63 @@
       "nome": "cicero",
       "img": "https://picsum.photos/200/300?random=100",
       "id": 2
-    }
-  ],
-  "msg": [
+    },
     {
-      "id": 1
+      "userId": 1,
+      "idAmigo": 2,
+      "nome": "paulo",
+      "img": "https://picsum.photos/200/300?random=100",
+      "id": 3
+    },
+    {
+      "userId": 2,
+      "idAmigo": 1,
+      "nome": "cicero",
+      "img": "https://picsum.photos/200/300?random=100",
+      "id": 4
     }
   ],
   "chat": [
     {
-      "userId": 1,
+      "userId": [
+        1,
+        3
+      ],
       "conversaEntre": [
         "cicero",
         "guilherme"
       ],
       "msg": [
         {
-          "id": 1
+          "id": 1,
+          "nome": "cicero",
+          "cv": "Salve"
+        },
+        {
+          "id": 2,
+          "nome": "guilherme",
+          "cv": "Dale"
+        },
+        {
+          "id": 3,
+          "nome": "guilherme",
+          "cv": "Como vai as coisas?"
+        },
+        {
+          "id": 4,
+          "nome": "cicero",
+          "msg": "No DALE e tu jovem?"
+        },
+        {
+          "nome": "cicero",
+          "cv": "eae"
+        },
+        {
+          "nome": "cicero",
+          "cv": "sussa?"
         }
       ],
       "id": 1
-    },
-    {
-      "userId": 3,
-      "conversaEntre": [
-        "guilherme",
-        "cicero"
-      ],
-      "msg": [
-        {
-          "id": 1
-        }
-      ],
-      "id": 2
     }
   ]
 }
